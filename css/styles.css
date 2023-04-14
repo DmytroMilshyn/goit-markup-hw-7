@@ -51,6 +51,8 @@ address {
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
     border: none;
 }
 
@@ -230,12 +232,21 @@ margin-top: 20px;
     padding: 112px 0;
     /* background-color: #2E2F42; */
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), 
-    url(../images/img-first.jpg);
+    url(../images/hero-mob-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), 
+    url(../images/hero-mob-1x.jpg);
+  }
 }
 
 .hero-title {
@@ -982,6 +993,20 @@ color: var(--secondary-text-color);
   }
   
   @media (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), 
+        url(../images/hero-tab-1x.jpg);
+
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .box {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), 
+        url(../images/hero-tab-1x.jpg);
+      }
+    }
     .menu-toggle {
       display: none;
     }
@@ -1217,6 +1242,7 @@ padding: 0 170px;
 }
 
 @media (min-width: 1200px) {
+    
     .header {
         padding-top: 24px;
         padding-bottom: 24px;
@@ -1231,6 +1257,18 @@ padding: 0 170px;
 }
 .hero {
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), 
+    url(../images/hero-pc-1x.jpg);
+
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), 
+    url(../images/hero-pc-2x.jpg);
+  }
 }
 .hero-title {
 padding: 0 200px;
